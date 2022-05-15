@@ -29,3 +29,7 @@ $(BIN_DIR): $(OUT_DIR)
 $(OBJ_DIR): $(OUT_DIR)
 	@echo Creating output objects folder
 	@mkdir $(OBJ_DIR)
+
+doc:
+	@echo Generando documentacion doxygen
+	@doxygen Doxyfile
