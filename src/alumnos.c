@@ -25,23 +25,35 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+/**
+ * @brief Constante de tipo alumno_s que contiene los datos del alumno Esteban Volentini
+ */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+/**
+ * @brief Constante de tipo alumno_s que contiene los datos del alumno Lucas Constantino
+ */
 static const struct alumno_s LUCAS_CONSTANTINO = {
     .apellidos = "CONSTANTINO",
     .nombres = "Lucas",
     .documento = "36.159.943",
 };
 
+/**
+ * @brief Array de punteros a las constantes de tipo alumno_s ya definidas
+ */
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &LUCAS_CONSTANTINO,
 };
 
+/**
+ * @brief Constante que computa la cantidad de alumnos definidos
+ */
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/
